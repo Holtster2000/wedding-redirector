@@ -10,4 +10,4 @@ def redirect_to_target(path):
     return redirect(TARGET_URL, code=302)  # 302 is a temporary redirect
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=8080)
+    app.run(host="0.0.0.0", port=10000)
