@@ -18,7 +18,7 @@ def redirect_target():
 # Main Redirect
 @app.route("/", defaults={"path": ""})
 @app.route("/<path:path>")
-def redirect_to_target():
+def redirect_to_target(path):
     return redirect(KNOT_URL, code=302)  # 302 is a temporary redirect
 
 if __name__ == "__main__":
