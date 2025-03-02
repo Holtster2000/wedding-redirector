@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: flask-redirector
+    runtime: python
+    buildCommand: ""
+    startCommand: "python wedding-redirector.py"
+    envVars:
+      - key: PORT
+        value: 10000
